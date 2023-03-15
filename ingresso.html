@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
 	<title>Reino pós-punk - Concorra a um ingresso</title>
 </head>
 <body>
@@ -14,16 +15,78 @@
 			<a href="sobre.html" style="margin: 3em; font-size:20px">Sobre o autor</a>
 		</nav>
 	</header>
-	<h1 id="inicio">Concorra a um ingresso para um show da sua banda preferida!</h1>
-	<hr />
-	<form method="post">Preencha o formulário abaixo para concorrer:<br>
-		<label>Nome:</label><input type="text" name="name" /><br>
-		<label>E-mail:</label> <input type="email" name="email" /><br>
-		<label>WhatsApp:</label> <input type="tel" name="wpp" pattern="[0-9]{5}-[0-9]{4}"/><br>
-		<label>Banda favorita:</label> <input type="text" name="band" /><br>
-		<label>Data do show:</label> <input type="date" name="date" /><br>
-		<label>Quero ser contatado por WhatsApp</label> <input type="checkbox" name="contato" /><br>
-		<button type="submit">Enviar</button> <button type="reset">Corrigir</button>
+	<h1 class="titulo">Concorra a um ingresso para um show da sua banda preferida!</h1>
+	<hr>
+	<form>
+		<fieldset>
+			<legend>Dados pesoais e contato</legend>		
+			<div class="linha">
+				<label>Nome:</label><input type="text" />
+				<label>E-mail:</label> <input type="email" />
+			</div>
+			<div class="linha">
+				<label>WhatsApp:</label> <input type="tel" pattern="[0-9]{5}-[0-9]{4}"/>
+				<label>Banda favorita:</label> <input type="text" />
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Dados de endereço</legend>
+			<div class="linha">
+				<label>Endereço:</label><input type="text" />
+				<label>Código Postal</label> <input type="text" pattern="[0-9]{5}-[0-9]{3}"/>
+			</div>
+			<div class="linha">
+				<label>Cidade:</label><input type="text" />
+				<label>Estado</label>
+					<select name="estado">
+						<option value="">Selecione seu estado</option>
+						<option value="AC">Acre</option>
+						<option value="AL">Alagoas</option>
+						<option value="AP">Amapá</option>
+						<option value="AM">Amazonas</option>
+						<option value="BA">Bahia</option>
+						<option value="CE">Ceará</option>
+						<option value="DF">Distrito Federal</option>
+						<option value="ES">Espírito Santo</option>
+						<option value="GO">Goiás</option>
+						<option value="MA">Maranhão</option>
+						<option value="MT">Mato Grosso</option>
+						<option value="MS">Mato Grosso do Sul</option>
+						<option value="MG">Minas Gerais</option>
+						<option value="PA">Pará</option>
+						<option value="PB">Paraíba</option>
+						<option value="PR">Paraná</option>
+						<option value="PE">Pernambuco</option>
+						<option value="PI">Piauí</option>
+						<option value="RJ">Rio de Janeiro</option>
+						<option value="RN">Rio Grande do Norte</option>
+						<option value="RS">Rio Grande do Sul</option>
+						<option value="RO">Rondônia</option>
+						<option value="RR">Roraima</option>
+						<option value="SC">Santa Catarina</option>
+						<option value="SP">São Paulo</option>
+						<option value="SE">Sergipe</option>
+						<option value="TO">Tocantins</option>
+					</select>
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Dados do show</legend>		
+			<div class="linha">
+				<label>Cidade do show:</label>
+					<select name="cidade">
+						<option value="">Selecione a cidade do show</option>
+						<option value="sp">São Paulo</option>
+						<option value="rj">Rio de Janeiro</option>
+						<option value="bsb">Brasília</option>
+					</select>
+				<label>Data do show:</label> <input type="date" />
+			</div>
+		</fieldset>
+		<div class="botoes">
+			<button type="submit" onclick="alert('Você enviou sua inscrição!')">Enviar</button> 
+			<button type="reset" onclick="alert(Campos resetados)">Corrigir</button>
+		</div>	
 	</form>
 </body>
 </html>
