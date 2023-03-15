@@ -8,35 +8,35 @@
 	<title>Reino pós-punk - Concorra a um ingresso</title>
 </head>
 <body>
-	<header>
-		<nav>
+	<header class="bloconav">
+		<nav class="menunav">
 			<a href="index.html" style="margin: 3em; font-size:20px">Home</a>
 			<a href="ingresso.html" style="margin: 3em; font-size:20px">Concorra a um ingresso</a>
 			<a href="sobre.html" style="margin: 3em; font-size:20px">Sobre o autor</a>
 		</nav>
-	</header>
+	</header><br><br>
 	<h1 class="titulo">Concorra a um ingresso para um show da sua banda preferida!</h1>
 	<hr>
-	<form>
+	<form method="get">
 		<fieldset>
 			<legend>Dados pesoais e contato</legend>		
 			<div class="linha">
-				<label>Nome:</label><input type="text" />
-				<label>E-mail:</label> <input type="email" />
+				<label for="nome">Nome:</label><input type="text" name="nome" id="nome"/>
+				<label for="email">E-mail:</label> <input type="email" name="email" id="email"/>
 			</div>
 			<div class="linha">
-				<label>WhatsApp:</label> <input type="tel" pattern="[0-9]{5}-[0-9]{4}"/>
-				<label>Banda favorita:</label> <input type="text" />
+				<label for="zap">WhatsApp:</label> <input type="tel" pattern="[0-9]{5}-[0-9]{4}" name="zap" id="zap"/>
+				<label for="banda">Banda favorita:</label> <input type="text" name="banda" id="banda"/>
 			</div>
 		</fieldset>
 		<fieldset>
 			<legend>Dados de endereço</legend>
 			<div class="linha">
-				<label>Endereço:</label><input type="text" />
-				<label>Código Postal</label> <input type="text" pattern="[0-9]{5}-[0-9]{3}"/>
+				<label for="endereço">Endereço:</label><input type="text" name="endereço" id="endereço" />
+				<label for="CEP">Código Postal</label><input type="text" name="CEP" id="CEP" pattern="[0-9]{5}-[0-9]{3}"/>
 			</div>
 			<div class="linha">
-				<label>Cidade:</label><input type="text" />
+				<label for="cidade">Cidade:</label><input type="text" name="cidade" id="cidade"/>
 				<label>Estado</label>
 					<select name="estado">
 						<option value="">Selecione seu estado</option>
@@ -74,7 +74,7 @@
 			<legend>Dados do show</legend>		
 			<div class="linha">
 				<label>Cidade do show:</label>
-					<select name="cidade">
+					<select name="cidadedoshow">
 						<option value="">Selecione a cidade do show</option>
 						<option value="sp">São Paulo</option>
 						<option value="rj">Rio de Janeiro</option>
@@ -85,7 +85,7 @@
 		</fieldset>
 		<div class="botoes">
 			<button type="submit" onclick="alert('Você enviou sua inscrição!')">Enviar</button> 
-			<button type="reset" onclick="alert(Campos resetados)">Corrigir</button>
+			<button type="reset" onclick="alert('Campos resetados')">Corrigir</button>
 		</div>	
 	</form>
 </body>
