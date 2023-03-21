@@ -9,6 +9,7 @@
     border: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 
 main {
@@ -23,6 +24,8 @@ main {
 	border: 2px dashed;
 	border-color: gold;
 	text-align: center;
+	margin: 0;
+	padding: 0;
   }
 
 .bloconav:hover {
@@ -104,17 +107,23 @@ label{
 	padding-right: 5px;
 }
 
-.botoes{
-	margin: 50px;
-}
+.comprar{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	cursor:pointer;
+	}
 
 fieldset {
 	margin-top: 10px;
-	border: 3px;
+	margin-bottom: 10px;
+	border: 2px;
 	border-style: solid;
 	border-radius: 10px;
 	border-color: black;
 	background: white;
+	-webkit-box-shadow: 12px 18px 6px 0px rgba(0,0,0,0.24);
+	-moz-box-shadow: 12px 18px 6px 0px rgba(0,0,0,0.24);
+	box-shadow: 12px 18px 6px 0px rgba(0,0,0,0.24);
 }
 
 input {
@@ -127,17 +136,44 @@ input {
 
 table {
 	margin-top: 10px;
-	border: 1px solid black;
 	width: 900px;
+	border-radius: 10px;
 	text-align: center;
+	margin: 0 auto;
+	-webkit-box-shadow: 12px 18px 6px 0px rgba(0,0,0,0.24);
+	-moz-box-shadow: 12px 18px 6px 0px rgba(0,0,0,0.24);
+	box-shadow: 12px 18px 6px 0px rgba(0,0,0,0.24);
+	border: solid 2px gray
 }
 
-td {
-	border: 1px solid black;
+.legenda {
+	margin-top: 10px;
+	margin-bottom:10px;
+}
+
+th {
+	background-color: black;
+	color: white;
 	font-family: "Verdana";
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
+
+td {
+	font-family: "Verdana";
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: solid 1px gray;
+	}
+
+tr:nth-child(even) {
+	background-color: #f1f1f1;
+}
+
+tr:hover td {
+	background: #E9E9E9E9;
+}
+
 
 button{
 	background: black;
@@ -147,8 +183,16 @@ button{
 	border-style: solid;
 	border-color: gold;
 	border-radius: 10px;
-	padding: 2.5px;
-	box-shadow: 2px 2px 5px black;
+	margin-bottom: 10px;
+	cursor:pointer
+}
+
+.selecionarestado {
+	border: 0.5px;
+	border-style: solid;
+	border-radius: 10px;
+	text-align:left;
+	padding: 5px;
 }
 
 .cidadedoshow{

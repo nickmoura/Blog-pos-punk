@@ -20,7 +20,7 @@
 		<hr>
 		<form method="get">
 			<fieldset>
-				<legend>Dados pesoais e contato</legend>		
+				<legend class="legenda">Dados pesoais e contato</legend>		
 				<div class="linha">
 					<label for="nome">Nome:</label><input type="text" name="nome" id="nome"/>
 					<label for="email">E-mail:</label> <input type="email" name="email" id="email"/>
@@ -31,7 +31,7 @@
 				</div>
 			</fieldset>
 			<fieldset>
-				<legend>Dados de endereço</legend>
+				<legend class="legenda">Dados de endereço</legend>
 				<div class="linha">
 					<label for="endereço">Endereço:</label><input type="text" name="endereço" id="endereço" />
 					<label for="CEP">Código Postal</label><input type="text" name="CEP" id="CEP" pattern="[0-9]{5}-[0-9]{3}"/>
@@ -39,7 +39,7 @@
 				<div class="linha">
 					<label for="cidade">Cidade:</label><input type="text" name="cidade" id="cidade"/>
 					<label>Estado</label>
-						<select name="estado">
+						<select name="estado" class="selecionarestado">
 							<option value="">Selecione seu estado</option>
 							<option value="AC">Acre</option>
 							<option value="AL">Alagoas</option>
@@ -72,7 +72,7 @@
 				</div>
 			</fieldset>
 			<fieldset>
-				<legend>Dados do show</legend>		
+				<legend class="legenda">Dados do show</legend>		
 				<div class="linha">
 					<label>Cidade do show:</label>
 						<select class="cidadedoshow" name="cidadedoshow">
@@ -89,51 +89,59 @@
 				<button type="reset" onclick="alert('Campos resetados')">Corrigir</button>
 			</span>	
 		</form>
-			<table border="1">
+			<table border="1" cellspacing="0">
+				<thead>
+					<tr>
+						<th colspan="6">Compre seu ingresso</th>
+					</tr>
+					<tr>
+						<th title="Banda do show que deseja ir">Banda</th>
+						<th title="Cidade do show">Cidade</th>
+						<th title="Data do show">Data</th>
+						<th title="Horário do show">Horário</th>
+						<th title="Preço do ingresso">Valor</th>
+						<th title="Comprar ingresso">Comprar</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="2">The Cure</td>
+						<td>Brasília</td>
+						<td>20 de agosto</td>
+						<td rowspan="2">19 horas</td>
+						<td>R$ 300,00</td>
+						<td>
+							<button class="comprar">Comprar</button>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2">São Paulo</td>
+						<td>20 de agosto</td>
+						<td>R$ 250,00</td>
+						<td>
+							<button class="comprar">Comprar</button>
+						</td>
+					</tr>
+					<tr>
+						<td>Bauhaus</td>
+						<td>21 de abril</td>
+						<td>20 horas</td>
+						<td>R$ 150,00</td>
+						<td>
+							<button class="comprar">Comprar</button>
+						</td>
+					</tr>
 				<tr>
-					<td>Banda</td>
-					<td>Cidade</td>
-					<td>Data</td>
-					<td>Horário</td>
-					<td>Valor</td>
-					<td>Comprar</td>
-				</tr>
-				<tr>
-					<td>Bauhaus</td>
-					<td>São Paulo</td>
-					<td>21 de abril</td>
-					<td>20 horas</td>
-					<td>R$ 150,00</td>
-					<td>
-						<span class="botoes">
-							<button>Comprar</button>
-						</span>
-					</td>
-				</tr>
-				<tr>
-					<td>The Cure</td>
-					<td>Brasília</td>
-					<td>20 de agosto</td>
-					<td>19 horas</td>
-					<td>R$ 250,00</td>
-					<td>
-						<span class="botoes">
-							<button>Comprar</button>
-						</span>
-					</td>
-				</tr>
-				<tr>
-					<td>Siouxsie and the Banshees</td>
-					<td>Rio de Janeiro</td>
-					<td>4 de outubro</td>
-					<td>21 horas</td>
-					<td>R$ 190,00</td>
-					<td>
-						<span class="botoes">
-						<button>Comprar</button>
-						</span>
-					</td>
-				</tr>
+						<td>Siouxsie and the Banshees</td>
+						<td>Rio de Janeiro</td>
+						<td>4 de outubro</td>
+						<td>21 horas</td>
+						<td>R$ 190,00</td>
+						<td>
+							<button class="comprar">Comprar</button>
+						</td>
+					</tr>
+				</tbody>
 			</table>
 	</main>
 </body>
