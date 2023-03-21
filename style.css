@@ -10,7 +10,11 @@
     margin: 0;
     box-sizing: border-box;
 }
- 
+
+main {
+	margin: 15px;
+}
+
 .bloconav {
 	background-color: black;
 	color: white;
@@ -41,7 +45,7 @@
     padding: 5px;
 	color: white;
 	text-decoration: none;
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
     text-transform: uppercase;
 }
 
@@ -49,6 +53,42 @@
     text-decoration: solid underline;
 	color: gold;
 	transition: 1.5s;
+}
+
+.foto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.videos iframe {
+	display: block;
+	max-width: 100%;
+	margin: 7.5px;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid black;
+	margin: 3px;
+	margin-bottom: 3px;
+  }
+
+h1 {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+h2 {
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 /* Para a página do ingresso */
@@ -65,11 +105,11 @@ label{
 }
 
 .botoes{
-	margin: 10px;
+	margin: 50px;
 }
 
 fieldset {
-	margin: 15px;
+	margin-top: 10px;
 	border: 3px;
 	border-style: solid;
 	border-radius: 10px;
@@ -78,10 +118,25 @@ fieldset {
 }
 
 input {
-	border: 1px;
+	border: 0.5px;
 	border-style: solid;
 	border-radius: 10px;
-	box-shadow: 2px 2px 5px black;
+	text-align:left;
+	padding: 5px;
+}
+
+table {
+	margin-top: 10px;
+	border: 1px solid black;
+	width: 900px;
+	text-align: center;
+}
+
+td {
+	border: 1px solid black;
+	font-family: "Verdana";
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 button{
@@ -94,4 +149,12 @@ button{
 	border-radius: 10px;
 	padding: 2.5px;
 	box-shadow: 2px 2px 5px black;
+}
+
+.cidadedoshow{
+	border: 0.5px;
+	border-style: solid;
+	border-radius: 10px;
+	text-align:left;
+	padding: 5px;
 }

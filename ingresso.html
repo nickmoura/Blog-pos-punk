@@ -14,79 +14,127 @@
 			<a href="ingresso.html" style="margin: 3em; font-size:20px">Concorra a um ingresso</a>
 			<a href="sobre.html" style="margin: 3em; font-size:20px">Sobre o autor</a>
 		</nav>
-	</header><br><br>
-	<h1 class="titulo">Concorra a um ingresso para um show da sua banda preferida!</h1>
-	<hr>
-	<form method="get">
-		<fieldset>
-			<legend>Dados pesoais e contato</legend>		
-			<div class="linha">
-				<label for="nome">Nome:</label><input type="text" name="nome" id="nome"/>
-				<label for="email">E-mail:</label> <input type="email" name="email" id="email"/>
-			</div>
-			<div class="linha">
-				<label for="zap">WhatsApp:</label> <input type="tel" pattern="[0-9]{5}-[0-9]{4}" name="zap" id="zap"/>
-				<label for="banda">Banda favorita:</label> <input type="text" name="banda" id="banda"/>
-			</div>
-		</fieldset>
-		<fieldset>
-			<legend>Dados de endereço</legend>
-			<div class="linha">
-				<label for="endereço">Endereço:</label><input type="text" name="endereço" id="endereço" />
-				<label for="CEP">Código Postal</label><input type="text" name="CEP" id="CEP" pattern="[0-9]{5}-[0-9]{3}"/>
-			</div>
-			<div class="linha">
-				<label for="cidade">Cidade:</label><input type="text" name="cidade" id="cidade"/>
-				<label>Estado</label>
-					<select name="estado">
-						<option value="">Selecione seu estado</option>
-						<option value="AC">Acre</option>
-						<option value="AL">Alagoas</option>
-						<option value="AP">Amapá</option>
-						<option value="AM">Amazonas</option>
-						<option value="BA">Bahia</option>
-						<option value="CE">Ceará</option>
-						<option value="DF">Distrito Federal</option>
-						<option value="ES">Espírito Santo</option>
-						<option value="GO">Goiás</option>
-						<option value="MA">Maranhão</option>
-						<option value="MT">Mato Grosso</option>
-						<option value="MS">Mato Grosso do Sul</option>
-						<option value="MG">Minas Gerais</option>
-						<option value="PA">Pará</option>
-						<option value="PB">Paraíba</option>
-						<option value="PR">Paraná</option>
-						<option value="PE">Pernambuco</option>
-						<option value="PI">Piauí</option>
-						<option value="RJ">Rio de Janeiro</option>
-						<option value="RN">Rio Grande do Norte</option>
-						<option value="RS">Rio Grande do Sul</option>
-						<option value="RO">Rondônia</option>
-						<option value="RR">Roraima</option>
-						<option value="SC">Santa Catarina</option>
-						<option value="SP">São Paulo</option>
-						<option value="SE">Sergipe</option>
-						<option value="TO">Tocantins</option>
-					</select>
-			</div>
-		</fieldset>
-		<fieldset>
-			<legend>Dados do show</legend>		
-			<div class="linha">
-				<label>Cidade do show:</label>
-					<select name="cidadedoshow">
-						<option value="">Selecione a cidade do show</option>
-						<option value="sp">São Paulo</option>
-						<option value="rj">Rio de Janeiro</option>
-						<option value="bsb">Brasília</option>
-					</select>
-				<label>Data do show:</label> <input type="date" />
-			</div>
-		</fieldset>
-		<div class="botoes">
-			<button type="submit" onclick="alert('Você enviou sua inscrição!')">Enviar</button> 
-			<button type="reset" onclick="alert('Campos resetados')">Corrigir</button>
-		</div>	
-	</form>
+	</header>
+	<main>
+		<h1 class="titulo">Concorra a um ingresso para um show da sua banda preferida!</h1>
+		<hr>
+		<form method="get">
+			<fieldset>
+				<legend>Dados pesoais e contato</legend>		
+				<div class="linha">
+					<label for="nome">Nome:</label><input type="text" name="nome" id="nome"/>
+					<label for="email">E-mail:</label> <input type="email" name="email" id="email"/>
+				</div>
+				<div class="linha">
+					<label for="zap">WhatsApp:</label> <input type="tel" pattern="[0-9]{5}-[0-9]{4}" name="zap" id="zap"/>
+					<label for="banda">Banda favorita:</label> <input type="text" name="banda" id="banda"/>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Dados de endereço</legend>
+				<div class="linha">
+					<label for="endereço">Endereço:</label><input type="text" name="endereço" id="endereço" />
+					<label for="CEP">Código Postal</label><input type="text" name="CEP" id="CEP" pattern="[0-9]{5}-[0-9]{3}"/>
+				</div>
+				<div class="linha">
+					<label for="cidade">Cidade:</label><input type="text" name="cidade" id="cidade"/>
+					<label>Estado</label>
+						<select name="estado">
+							<option value="">Selecione seu estado</option>
+							<option value="AC">Acre</option>
+							<option value="AL">Alagoas</option>
+							<option value="AP">Amapá</option>
+							<option value="AM">Amazonas</option>
+							<option value="BA">Bahia</option>
+							<option value="CE">Ceará</option>
+							<option value="DF">Distrito Federal</option>
+							<option value="ES">Espírito Santo</option>
+							<option value="GO">Goiás</option>
+							<option value="MA">Maranhão</option>
+							<option value="MT">Mato Grosso</option>
+							<option value="MS">Mato Grosso do Sul</option>
+							<option value="MG">Minas Gerais</option>
+							<option value="PA">Pará</option>
+							<option value="PB">Paraíba</option>
+							<option value="PR">Paraná</option>
+							<option value="PE">Pernambuco</option>
+							<option value="PI">Piauí</option>
+							<option value="RJ">Rio de Janeiro</option>
+							<option value="RN">Rio Grande do Norte</option>
+							<option value="RS">Rio Grande do Sul</option>
+							<option value="RO">Rondônia</option>
+							<option value="RR">Roraima</option>
+							<option value="SC">Santa Catarina</option>
+							<option value="SP">São Paulo</option>
+							<option value="SE">Sergipe</option>
+							<option value="TO">Tocantins</option>
+						</select>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Dados do show</legend>		
+				<div class="linha">
+					<label>Cidade do show:</label>
+						<select class="cidadedoshow" name="cidadedoshow">
+							<option value="">Selecione a cidade do show</option>
+							<option value="sp">São Paulo</option>
+							<option value="rj">Rio de Janeiro</option>
+							<option value="bsb">Brasília</option>
+						</select>
+					<label>Data do show:</label> <input type="date" />
+				</div>
+			</fieldset>
+			<span class="botoes">
+				<button type="submit" onclick="alert('Você enviou sua inscrição!')">Enviar</button> 
+				<button type="reset" onclick="alert('Campos resetados')">Corrigir</button>
+			</span>	
+		</form>
+			<table border="1">
+				<tr>
+					<td>Banda</td>
+					<td>Cidade</td>
+					<td>Data</td>
+					<td>Horário</td>
+					<td>Valor</td>
+					<td>Comprar</td>
+				</tr>
+				<tr>
+					<td>Bauhaus</td>
+					<td>São Paulo</td>
+					<td>21 de abril</td>
+					<td>20 horas</td>
+					<td>R$ 150,00</td>
+					<td>
+						<span class="botoes">
+							<button>Comprar</button>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td>The Cure</td>
+					<td>Brasília</td>
+					<td>20 de agosto</td>
+					<td>19 horas</td>
+					<td>R$ 250,00</td>
+					<td>
+						<span class="botoes">
+							<button>Comprar</button>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td>Siouxsie and the Banshees</td>
+					<td>Rio de Janeiro</td>
+					<td>4 de outubro</td>
+					<td>21 horas</td>
+					<td>R$ 190,00</td>
+					<td>
+						<span class="botoes">
+						<button>Comprar</button>
+						</span>
+					</td>
+				</tr>
+			</table>
+	</main>
 </body>
 </html>
