@@ -78,16 +78,16 @@ main {
 	margin: 7.5px;
 }
 
-hr {
+/* DESATIVADO POR ESTÉTICA
+	hr {
 	border: none;
 	border-top: 1px solid black;
-	margin: 3px;
-	margin-bottom: 3px;
-  }
+	margin-bottom: 20px;
+  } */
 
 h1 {
 	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 h2 {
@@ -144,7 +144,7 @@ table {
 	-webkit-box-shadow: 12px 18px 6px 0px rgba(0,0,0,0.24);
 	-moz-box-shadow: 12px 18px 6px 0px rgba(0,0,0,0.24);
 	box-shadow: 12px 18px 6px 0px rgba(0,0,0,0.24);
-	border: solid 2px gray
+	border: solid 2px lightgray
 }
 
 .legenda {
@@ -185,7 +185,8 @@ button{
 	border-color: gold;
 	border-radius: 10px;
 	margin-bottom: 10px;
-	cursor:pointer
+	cursor:pointer;
+	margin: 0 auto;
 }
 
 .selecionarestado {
@@ -202,4 +203,8 @@ button{
 	border-radius: 10px;
 	text-align:left;
 	padding: 5px;
+}
+
+iframe {
+border-radius: 10px;
 }
