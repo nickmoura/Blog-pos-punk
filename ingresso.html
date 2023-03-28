@@ -79,22 +79,22 @@
 		<form method="get">
 			<fieldset>
 				<legend class="legenda">Dados pesoais e contato</legend>		
-				<div class="linha">
+				<section class="linha">
 					<label for="nome">Nome:</label><input type="text" name="nome" id="nome"/>
 					<label for="email">E-mail:</label> <input type="email" name="email" id="email"/>
-				</div>
-				<div class="linha">
+				</section>
+				<section class="linha">
 					<label for="zap">WhatsApp:</label> <input type="tel" pattern="[0-9]{5}-[0-9]{4}" name="zap" id="zap"/>
 					<label for="banda">Banda favorita:</label> <input type="text" name="banda" id="banda"/>
-				</div>
+				</section>
 			</fieldset>
 			<fieldset>
 				<legend class="legenda">Dados de endereço</legend>
-				<div class="linha">
+				<section class="linha">
 					<label for="endereço">Endereço:</label><input type="text" name="endereço" id="endereço" />
 					<label for="CEP">Código Postal</label><input type="text" name="CEP" id="CEP" pattern="[0-9]{5}-[0-9]{3}"/>
-				</div>
-				<div class="linha">
+				</section>
+				<section class="linha">
 					<label for="cidade">Cidade:</label><input type="text" name="cidade" id="cidade"/>
 					<label>Estado</label>
 						<select name="estado" class="selecionarestado">
@@ -127,11 +127,11 @@
 							<option value="SE">Sergipe</option>
 							<option value="TO">Tocantins</option>
 						</select>
-				</div>
+				</section>
 			</fieldset>
 			<fieldset>
 				<legend class="legenda">Dados do show</legend>		
-				<div class="linha">
+				<section class="linha">
 					<label>Cidade do show:</label>
 						<select class="cidadedoshow" name="cidadedoshow">
 							<option value="">Selecione a cidade do show</option>
@@ -140,14 +140,13 @@
 							<option value="bsb">Brasília</option>
 						</select>
 					<label>Data do show:</label> <input type="date" />
-				</div>
+				</section>
 			</fieldset>
 			<span class="botoes">
 				<button type="submit" onclick="alert('Você enviou sua inscrição!')">Enviar</button> 
 				<button type="reset" onclick="alert('Campos resetados')">Corrigir</button>
-			</span>	
+			</span>
 		</form>
-
 	</main>
 </body>
 </html>
