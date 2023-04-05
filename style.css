@@ -17,12 +17,13 @@ body {
 
 iframe {
 	border-radius: 10px;
+	border: 2px solid gold;
 	}
 
 
 .bloconav {
 	background-color: #1c1c1c;
-	color: white;
+	color: black;
 	display: block;
 	width: 100%;
 	border: 2px dashed;
@@ -30,11 +31,17 @@ iframe {
 	text-align: center;
 	top: 0;
 	left: 0;
+	text-shadow:
+	-1px -1px 0 gold,  
+	 1px -1px 0 gold,
+	-1px  1px 0 gold,
+	 1px  1px 0 gold;
 }
 	
 .bloconav:hover {
 	border:2px dotted white;
-	transition: 1.5s;
+	transition: 0.5s;
+	text-shadow: none;
 }
 	
 .menunav {
@@ -50,7 +57,7 @@ iframe {
 	
 .menunav a {	
 	padding: 5px;
-	color: white;
+	color: black;
 	text-decoration: none;
 	font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
 	text-transform: uppercase;
@@ -58,8 +65,8 @@ iframe {
 	
 .menunav a:hover {
 	text-decoration: solid underline;
-	color: gold;
-	transition: 1.5s;
+	color: white;
+	transition: 0.5s;
 }
 
 nav ul {
@@ -73,16 +80,27 @@ nav ul {
 
 nav ul li a{
 	padding: 10px 15px;
-	color: white;
+	color: black;
 	text-decoration: none;
 	border-radius: 5px;
 	text-transform: uppercase;
+	text-shadow:
+	-1px -1px 0 gold,  
+	 1px -1px 0 gold,
+	-1px  1px 0 gold,
+	 1px  1px 0 gold;
 }
 
 nav ul li a:hover{
-	background-color: black;
+	background-color: white;
 	text-decoration: none;
 	transition: 1s;
+	color: black;
+	text-shadow:
+	-1px -1px 0 gold,  
+	 1px -1px 0 gold,
+	-1px  1px 0 gold,
+	 1px  1px 0 gold;
 }
 
 figure {
@@ -90,6 +108,11 @@ figure {
 	border-radius: 10px;
 	align-items: center;
     justify-content: center;
+}
+
+main img {
+	border: 2px solid gold;
+	border-radius: 10px;
 }
 
 figcaption {
@@ -152,7 +175,7 @@ blockquote {
 	margin-bottom: 20px;
   } */
 
-h1 {
+h1, h2 {
 	margin-top: 30px;
 	margin-bottom: 20px;
 	display: flex;
@@ -160,18 +183,12 @@ h1 {
     justify-content: center;
 	font-family: 'impact';
 	text-transform: uppercase;
-	color: white;
-}
-
-h2 {
-	margin-top: 30px;
-	margin-bottom: 30px;
-	display: flex;
-    align-items: center;
-    justify-content: center;
-	font-family: 'impact';
-	text-transform: uppercase;
-	color: white;
+	color: black;
+	text-shadow:
+	-1px -1px 0 gold,  
+	 1px -1px 0 gold,
+	-1px  1px 0 gold,
+	 1px  1px 0 gold;
 }
 
 /* Para a página do ingresso */
