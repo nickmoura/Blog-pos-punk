@@ -32,10 +32,6 @@ iframe {
 	top: 0;
 	left: 0;
 	text-shadow:
-	-1px -1px 0 gold,  
-	 1px -1px 0 gold,
-	-1px  1px 0 gold,
-	 1px  1px 0 gold;
 }
 	
 .bloconav:hover {
@@ -61,12 +57,22 @@ iframe {
 	text-decoration: none;
 	font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
 	text-transform: uppercase;
+	text-shadow:
+	-1px -1px 0 gold,  
+	 1px -1px 0 gold,
+	-1px  1px 0 gold,
+	 1px  1px 0 gold;
 }
 	
 .menunav a:hover {
 	text-decoration: solid underline;
 	color: white;
 	transition: 0.5s;
+	text-shadow:
+	-1px -1px 0 black,  
+	 1px -1px 0 black,
+	-1px  1px 0 black,
+	 1px  1px 0 black;
 }
 
 nav ul {
@@ -78,12 +84,14 @@ nav ul {
 	justify-content: center;
 }
 
-nav ul li a{
+.links nav ul li a{
 	padding: 10px 15px;
+	font-size: 25px;
 	color: black;
 	text-decoration: none;
 	border-radius: 5px;
 	text-transform: uppercase;
+	font-family: 'impact';
 	text-shadow:
 	-1px -1px 0 gold,  
 	 1px -1px 0 gold,
@@ -91,17 +99,19 @@ nav ul li a{
 	 1px  1px 0 gold;
 }
 
-nav ul li a:hover{
+.links nav ul li a:hover{
 	background-color: white;
 	text-decoration: none;
 	transition: 1s;
-	color: black;
+	color: white;
 	text-shadow:
-	-1px -1px 0 gold,  
-	 1px -1px 0 gold,
-	-1px  1px 0 gold,
-	 1px  1px 0 gold;
+	-1px -1px 0 black,  
+	 1px -1px 0 black,
+	-1px  1px 0 black,
+	 1px  1px 0 black;
 }
+
+/* Para as fotos */
 
 figure {
     display: flex;
@@ -124,6 +134,8 @@ figcaption {
 	font-size: 15px;
 }
 
+/* Para os vídeos */
+
 .videos {
     display: flex;
     flex-direction: column;
@@ -137,6 +149,8 @@ figcaption {
 	margin: 7.5px;
 }
 
+/* Para as páginas de conteúdo */
+
 .conteudo {
 	text-align: justify;
 	font-family: "roboto condensed";
@@ -146,6 +160,8 @@ figcaption {
 	margin-right: 30px;
 	color: white;
 }
+
+/* Para a página "sobre" */
 
 blockquote {
 	display: flex;
@@ -312,3 +328,40 @@ button{
 	padding: 5px;
 }
 
+/* Para a Splash Screen */
+
+.splash {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.splash h1 {
+	font-size: 3em;
+	margin-bottom: 0.5em;
+}
+
+.loader {
+	margin-top: 30px;
+	padding-top: 20px;
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px solid gold;
+	width: 120px;
+	height: 120px;
+	-webkit-animation: spin 2s linear infinite; /* Safari */
+	animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+  }
