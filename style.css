@@ -184,6 +184,25 @@ blockquote {
 	width: 100%;
 }
 
+.lista-sobre-mim a {	
+	padding: 5px;
+	color: gold;
+	text-decoration: none;
+	font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
+	text-transform: uppercase;
+}
+	
+.lista-sobre-mim a:hover {
+	text-decoration: solid underline;
+	color: white;
+	transition: 0.5s;
+	text-shadow:
+	-1px -1px 0 black,  
+	 1px -1px 0 black,
+	-1px  1px 0 black,
+	 1px  1px 0 black;
+}
+
 /* DESATIVADO POR ESTÉTICA
 	hr {
 	border: none;
@@ -265,6 +284,8 @@ table {
 }
 
 .legenda {
+	margin-top: 10px;
+	margin-bottom: 10px;
 	padding-top: 10px;
 	padding-bottom:10px;
 	color:gold
