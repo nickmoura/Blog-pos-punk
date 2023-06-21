@@ -82,7 +82,7 @@
 			</tbody>
 		</table>
 		<h1 class="titulo">Concorra a um ingresso para um show da sua banda preferida!</h1>
-		<form method="get">
+		<form id="ingresso" method="get">
 			<fieldset>
 				<legend class="legenda">Dados pesoais e contato</legend>		
 				<section class="linha">
@@ -151,8 +151,8 @@
 				</section>
 			</fieldset>
 			<span class="botoes">
-				<button type="submit" onclick="alert('Você enviou sua inscrição!')">Enviar</button> 
-				<button type="reset" onclick="alert('Campos resetados')">Corrigir</button>
+				<button class="envio" id="btnsalvar" type="submit" onclick="alert('Você enviou sua inscrição!')">Enviar</button> 
+				<button class="envio" type="reset" onclick="alert('Campos resetados')">Corrigir</button>
 			</span>
 		</form>
 	</main>
