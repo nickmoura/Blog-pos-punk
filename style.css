@@ -372,24 +372,24 @@ tr:hover td {
 }
 
 .loader {
-	margin-top: 1.33%; /* 30px convertido para porcentagem */
-	padding-top: 1.33%; /* 20px convertido para porcentagem */
-	border: 0.5333em solid #f3f3f3;
+	margin-top: 30px;
+	padding-top: 20px;
+	border: 16px solid #f3f3f3;
 	border-radius: 50%;
-	border-top: 0.5333em solid gold;
-	width: 10%; /* 120px convertido para porcentagem */
-	height: 10%; /* 120px convertido para porcentagem */
+	border-top: 16px solid gold;
+	width: 120px;
+	height: 120px;
 	-webkit-animation: spin 2s linear infinite; /* Safari */
 	animation: spin 2s linear infinite;
-}
+  }
 
-/* Safari */
-@-webkit-keyframes spin {
+  /* Safari */
+  @-webkit-keyframes spin {
 	0% { -webkit-transform: rotate(0deg); }
 	100% { -webkit-transform: rotate(360deg); }
-}
+  }
 
-@keyframes spin {
+  @keyframes spin {
 	0% { transform: rotate(0deg); }
 	100% { transform: rotate(360deg); }
-}
+  }
