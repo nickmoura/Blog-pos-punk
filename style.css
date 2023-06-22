@@ -74,20 +74,21 @@ nav ul {
 
 .links nav ul li a {
 	padding: 0.75em 1em;
-	font-size: 2.5em;
-	color: black;
+	font-size: 1.5em;
+	color: white;
+	text-shadow: 1px 1px 1px gold;
 	text-decoration: none;
 	border-radius: 5px;
 	text-transform: uppercase;
 	font-family: 'impact';
-	text-shadow: none;
 }
 
 .links nav ul li a:hover {
 	background-color: white;
+	text-shadow: 0.5px 0.5px 0.5px gold;
 	text-decoration: none;
 	transition: 1s;
-	color: white;
+	color: black;
 }
 
 /* Para as fotos */
