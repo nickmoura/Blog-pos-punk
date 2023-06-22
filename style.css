@@ -12,7 +12,8 @@
 }
 
 body {
-	background-color: black;
+	background:black;
+	background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(90,90,90,1) 53%, rgba(0,0,0,1) 100%);
 }
 
 iframe {
@@ -116,17 +117,17 @@ figcaption {
 
 /* Para os vídeos */
 
-.videos {
+.contemvideos {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
 
-.videos iframe {
-	display: block;
-	max-width: 100%;
+.video {
 	margin: 0.75em;
+	width: 20%;
+	height: auto;
 }
 
 /* Para as páginas de conteúdo */
