@@ -79,7 +79,7 @@ nav ul {
 	justify-content: center;
 }
 
-.links nav ul li a {
+.links ul li a {
 	padding: 0.75em 1em;
 	font-size: 1.5em;
 	color: white;
@@ -88,9 +88,10 @@ nav ul {
 	border-radius: 5px;
 	text-transform: uppercase;
 	font-family: 'impact';
+	margin-bottom: 10px;
 }
 
-.links nav ul li a:hover {
+.links ul li a:hover {
 	background-color: white;
 	text-shadow: 0.5px 0.5px 0.5px gold;
 	text-decoration: none;
@@ -100,16 +101,14 @@ nav ul {
 
 /* Para as fotos */
 
-figure {
-	display: flex;
-	border-radius: 10px;
-	align-items: center;
-	justify-content: center;
-}
-
 main img {
 	border: 0.15em solid gold;
 	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	width: 30%;
 }
 
 figcaption {
