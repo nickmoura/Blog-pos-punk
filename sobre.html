@@ -11,61 +11,37 @@
 	</title>
 </head>
 <body>
-	<header class="bloconav">
-		<nav class="menunav">
-			<a title="Home" href="principal.html">
-				Home
-			</a>
-			<a title="Ingresso" href="ingresso.html">
-				Concorra a um ingresso
-			</a>
-			<a title="Sobre" href="sobre.html">
-				Sobre o autor
-			</a>
-		</nav>
+	<header>
+		<h1 class="titulo">Reino pós-punk</h1>
+				<p>
+					Informações sobre as bandas preferidas em um só lugar.
+				</p>
 	</header>
+	<nav class="menunav">
+		<a title="Home" href="principal.html">Home</a>
+		<a title="Ingresso" href="ingresso.html">Concorra a um ingresso</a>
+		<a title="Sobre" href="sobre.html">Sobre</a>
+	</nav>
 	<main>
 		<h1 class="titulo">
 			Sobre o autor
 		</h1>
-		<hr />
+		<h2>Índice</h2>
 		<!-- <hr> SENDO DESATIVADO POR ESTÉTICA-->
-			<nav class="links">
-				<h2>
-					Índice
-				</h2>
-				<br>
-				<ul>
-					<li>
-						<a href="#sobre">
-						Sobre mim
-						</a>
-					</li>
-					<br/>
-					<li>
-						<a href="#formacao">
-							Minha formação
-						</a>
-					</li>
-					<br/>
-					<li>
-						<a href="#contatos">
-							Contato
-						</a>
-					</li>
-					<br>
+			<nav>
+				<ul class="listabandas">
+					<li><a  class="linkbanda" href="#sobre">Sobre mim</a></li>
+					<li><a  class="linkbanda" href="#formacao">Minha formação</a></li>
+					<li><a  class="linkbanda" href="#contatos">Contato</a></li>
 				</ul>
 			</nav>
-			<br>
 			<picture>
 				<source media="(max-width: 750px)" srcset="assets/img/eu-300.jpg" type="image/jpeg">
 				<source media="(max-width: 1050px)" srcset="assets/img/eu-700.jpg" type="image/jpeg">
-				<img src="assets/img/eu-1000.jpg" alt="Integrantes do Siouxsie and the Banshees" class="fotosbandas">
+				<img src="assets/img/eu-1000.jpg" alt="eu" class="fotosbandas">
 			</picture>
 		<section id="Sobre">
-			<h2>
-				Sobre mim
-			</h2>
+			<h2>Sobre mim</h2>
 			<p class="conteudo">
 			Meu nome é <b>Nickolas Mensatto Moura</b>. Tenho <b>28 anos</b> e moro em <b>Sorocaba/SP</b>. Sou <b>muito curioso, festeiro, fã de post-punk e futebol</b>.
 		</p>
@@ -79,9 +55,7 @@
 			</blockquote>
 		</section>
 		<section id="formacao">
-			<h2>
-				Minha formação
-			</h2>
+			<h2>Minha formação</h2>
 			<p class="conteudo">
 				Sou formado em <b>Relações Internacionais</b> pela <b>Universidade de Sorocaba</b>.
 				Fiz uma transição de carreira e hoje sou <b>Scrum Master</b>. 

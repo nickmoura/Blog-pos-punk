@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,141 +11,193 @@
 		Reino pós-punk - página inicial
 	</title>
 </head>
+
 <body>
-	<header class="bloconav">
-		<nav class="menunav">
-			<a title="Home" href="principal.html">
-				Home
-			</a>
-			<a title="Ingresso" href="ingresso.html">
-				Concorra a um ingresso
-			</a>
-			<a title="Sobre" href="sobre.html">
-				Sobre o autor
-			</a>
-		</nav>
+	<header>
+		<h1 class="titulo">Reino pós-punk</h1>
+		<p>
+			Informações sobre as bandas preferidas em um só lugar.
+		</p>
 	</header>
+	<nav class="menunav">
+		<a title="Home" href="principal.html">
+			Home
+		</a>
+		<a title="Ingresso" href="ingresso.html">
+			Concorra a um ingresso
+		</a>
+		<a title="Sobre" href="sobre.html">
+			Sobre
+		</a>
+	</nav>
 	<main>
-		<h1 class="titulo">
-			Reino pós-punk
-		</h1>
 		<hr />
 		<!-- <hr> SENDO DESATIVADO POR ESTÉTICA-->
 		<section class="links">
-		<h2 >
-			Índice
-		</h2>
-		<br>
-		<nav>
-			<ul class="listabandas">
-				<li>
-					<a class="linkbanda" href="#thecure">
+			<h2>
+				Índice
+			</h2>
+			<br>
+			<nav>
+				<ul class="listabandas">
+					<li><a class="linkbanda" href="#thecure">The Cure</a></li>
+					<li><a class="linkbanda" href="#bauhaus">Bauhaus</a></li>
+					<li><a class="linkbanda" href="#siouxsie">Siouxsie and the Banshees</a></li>
+				</ul>
+			</nav>
+			<article>
+				<h2 id="thecure">
 					The Cure
-					</a>
-				</li>
+				</h2>
+				<p class="conteudo">
+					O The Cure é uma banda formada em 1978 na cidade de Crawley, um subúrbio de Londres localizado no
+					condado de West Sussex,
+					na Inglaterra. A banda passou por várias mudanças de formação, com o vocalista, guitarrista e
+					principal compositor
+					Robert Smith sendo o membro constante e principal responsável na sua direção musical e criativa.
+				</p>
+				<p class="conteudo">
+					Iniciaram a sua carreira ainda muito influenciados pelo punk, porém, rapidamente começaram a
+					desenvolver sons mais
+					sombrios e densos, assim como letras mais complexas e angustiantes — influenciadas por literatura
+					existencialista,
+					niilista, gótica e de fantasia de autores como Sartre, Kafka, Peake, Camus, Farmer entre outros —,
+					sem cedências,
+					conseguindo, com essa combinação, a sua imagem de marca e um estatuto de culto que perdura até hoje.
+				</p>
 				<br>
-				<li>
-					<a class="linkbanda" href="#bauhaus">
-						Bauhaus
-					</a>
-				</li>
+				<picture>
+					<source media="(max-width: 750px)" srcset="assets/img/The-Cure-300.jpg" type="image/jpeg">
+					<source media="(max-width: 1050px)" srcset="assets/img/The-Cure-700.jpg" type="image/jpeg">
+					<img src="assets/img/The-Cure-1000.jpg" alt="Integrantes do The Cure" class="fotosbandas">
+				</picture>
+				<br />
+				<figcaption>
+					Os integrantes do The Cure
+				</figcaption>
 				<br>
-				<li>
-					<a class="linkbanda" href="#siouxsie">
-					Siouxsie and the Banshees
-					</a>
-				</li>
+				<p class="conteudo">
+					Entre as músicas mais famosas do The Cure estão:
+				</p>
+				<aside>
+					<div class="video-container">
+						<iframe src="https://www.youtube.com/embed/9GkVhgIeGJQ" title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen class="video"></iframe>
+					</div>
+					<div class="video-container">
+						<iframe src="https://www.youtube.com/embed/scif2vfg1ug" title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen class="video"></iframe>
+					</div>
+					<div class="video-container">
+						<iframe src="https://www.youtube.com/embed/BjvfIJstWeg" title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen class="video"></iframe>
+					</div>
+					<div class="video-container"><iframe src="https://www.youtube.com/embed/ks_qOI0lzho"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen class="video"></iframe></div>
+					<div class="video-container"><iframe src="https://www.youtube.com/embed/ijxk-fgcg7c"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen class="video"></iframe></div>
+					<div class="video-container"><iframe src="https://www.youtube.com/embed/4KeII31qyck"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen class="video"></iframe></div>
+					<div class="video-container"><iframe src="https://www.youtube.com/embed/qh-jVXyn5CM"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen class="video"></iframe></div>
+				</aside>
+			</article>
+			<section>
+				<h2 id="bauhaus">
+					Bauhaus
+				</h2>
+				<p class="conteudo">
+					Bauhaus é uma banda de rock inglesa fundada em 1978 em Northampton, Inglaterra. É composta pelo
+					guitarrista Daniel Ash,
+					o baixista David J, o baterista Kevin Haskins que atuaram como trio até formarem quarteto com o
+					vocalista Peter Murphy.
+				</p>
+				<p class="conteudo">
+					O nome Bauhaus é uma clara homenagem à escola de arte homônima inaugurada em 1919, perseguida pelos
+					nazistas e
+					depois fechada em 1933.
+				</p>
 				<br>
-			</ul>
-		</nav>
-		<article>
-			<h2 id="thecure">
-				The Cure
-			</h2>
-			<p class="conteudo">
-				O The Cure é uma banda formada em 1978 na cidade de Crawley, um subúrbio de Londres localizado no condado de West Sussex, 
-				na Inglaterra. A banda passou por várias mudanças de formação, com o vocalista, guitarrista e principal compositor 
-				Robert Smith sendo o membro constante e principal responsável na sua direção musical e criativa.
-			</p> 
-			<p class="conteudo">
-				Iniciaram a sua carreira ainda muito influenciados pelo punk, porém, rapidamente começaram a desenvolver sons mais 
-				sombrios e densos, assim como letras mais complexas e angustiantes — influenciadas por literatura existencialista, 
-				niilista, gótica e de fantasia de autores como Sartre, Kafka, Peake, Camus, Farmer entre outros —, sem cedências, 
-				conseguindo, com essa combinação, a sua imagem de marca e um estatuto de culto que perdura até hoje.
-			</p>
-			<br>
-			<picture>
-				<source media="(max-width: 750px)" srcset="assets/img/The-Cure-300.jpg" type="image/jpeg">
-				<source media="(max-width: 1050px)" srcset="assets/img/The-Cure-700.jpg" type="image/jpeg">
-				<img src="assets/img/The-Cure-1000.jpg" alt="Integrantes do The Cure" class="fotosbandas">
-			</picture>
-			<br />
-			<figcaption>
-				Os integrantes do The Cure
-			</figcaption>
-			<br>
-			<p class="conteudo">
-				Entre as músicas mais famosas do The Cure estão:
-			</p>
-				<aside class="video-container">
-					<iframe src="https://www.youtube.com/embed/9GkVhgIeGJQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
-					<iframe src="https://www.youtube.com/embed/scif2vfg1ug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
-					<iframe src="https://www.youtube.com/embed/BjvfIJstWeg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
-					<iframe src="https://www.youtube.com/embed/ks_qOI0lzho" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
-					<iframe src="https://www.youtube.com/embed/ijxk-fgcg7c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
-					<iframe src="https://www.youtube.com/embed/4KeII31qyck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
-					<iframe src="https://www.youtube.com/embed/qh-jVXyn5CM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
-			</aside>
-		</article>
-		<section>
-			<h2 id="bauhaus">
-				Bauhaus
-			</h2>
-			<p class="conteudo">
-				Bauhaus é uma banda de rock inglesa fundada em 1978 em Northampton, Inglaterra. É composta pelo guitarrista Daniel Ash, 
-				o baixista David J, o baterista Kevin Haskins que atuaram como trio até formarem quarteto com o vocalista Peter Murphy.
-			</p>
-			<p class="conteudo">
-				O nome Bauhaus é uma clara homenagem à escola de arte homônima inaugurada em 1919, perseguida pelos nazistas e 
-				depois fechada em 1933.
-			</p>
-			<br>
-			<picture>
-				<source media="(max-width: 750px)" srcset="assets/img/Bauhaus-300.jpg" type="image/jpeg">
-				<source media="(max-width: 1050px)" srcset="assets/img/Bauhaus-700.jpg" type="image/jpeg">
-				<img src="assets/img/Bauhaus-1000.jpg" alt="Integrantes do The Cure" class="fotosbandas">
-			</picture>
-			<figcaption>
-				Os integrantes do Bauhaus.
-			</figcaption>
-			<br>
-			<p class="conteudo">
-				Algumas de suas canções mais famosas:
-			</p>
-			<aside class="video-container">
-				<iframe src="https://www.youtube.com/embed/oeb7Gdcz3ec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
-				<iframe src="https://www.youtube.com/embed/Qxqq5vahHKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
-				<iframe src="https://www.youtube.com/embed/rhJZrRV5YKo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
-				<iframe src="https://www.youtube.com/embed/GmWjRqJoCe0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
-				<iframe src="https://www.youtube.com/embed/Yy9h2q_dr9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
-			</aside>
-		</section>
+				<picture>
+					<source media="(max-width: 750px)" srcset="assets/img/Bauhaus-300.jpg" type="image/jpeg">
+					<source media="(max-width: 1050px)" srcset="assets/img/Bauhaus-700.jpg" type="image/jpeg">
+					<img src="assets/img/Bauhaus-1000.jpg" alt="Integrantes do The Cure" class="fotosbandas">
+				</picture>
+				<figcaption>
+					Os integrantes do Bauhaus.
+				</figcaption>
+				<br>
+				<p class="conteudo">
+					Algumas de suas canções mais famosas:
+				</p>
+				<aside>
+					<div class="video-container">
+						<iframe src="https://www.youtube.com/embed/oeb7Gdcz3ec" title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen class="video"></iframe>
+					</div>
+					<div class="video-container">
+						<iframe src="https://www.youtube.com/embed/Qxqq5vahHKk" title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen class="video"></iframe>
+					</div>
+					<div class="video-container">
+						<iframe src="https://www.youtube.com/embed/rhJZrRV5YKo" title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen class="video"></iframe>
+					</div>
+					<div class="video-container"><iframe src="https://www.youtube.com/embed/GmWjRqJoCe0"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen class="video"></iframe>
+					</div>
+					<div class="video-container"><iframe src="https://www.youtube.com/embed/Yy9h2q_dr9k"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen class="video"></iframe>
+					</div>
+				</aside>
+			</section>
 			<h2 id="siouxsie">Siouxsie and the Banshees</h2>
 			<p class="conteudo">
-				Siouxsie and the Banshees foi uma banda de rock inglesa formada em Londres em 1976 por Siouxsie Sioux (vocalista) e 
+				Siouxsie and the Banshees foi uma banda de rock inglesa formada em Londres em 1976 por Siouxsie Sioux
+				(vocalista) e
 				Steven Severin (baixista).
-				O grupo foi um dos pioneiros do pós-punk, sua música evoluirá constantemente ao longo de seus vinte anos de existência. 
+				O grupo foi um dos pioneiros do pós-punk, sua música evoluirá constantemente ao longo de seus vinte anos
+				de existência.
 				A banda se separou em 1996.
 			</p>
-			<p class="conteudo">			
-				Siouxsie and the Banshees têm servido como uma influência importante em diversos artistas incluindo Joy Division, 
-				The Cure, Depeche Mode, The Smiths, Massive Attack, Radiohead, e PJ Harvey. Sid Vicious e Robert Smith já participaram da banda.
+			<p class="conteudo">
+				Siouxsie and the Banshees têm servido como uma influência importante em diversos artistas incluindo Joy
+				Division,
+				The Cure, Depeche Mode, The Smiths, Massive Attack, Radiohead, e PJ Harvey. Sid Vicious e Robert Smith
+				já participaram da banda.
 			</p>
 			<br>
 			<picture>
-				<source media="(max-width: 750px)" srcset="assets/img/Siouxsie-and-the-Banshees-300.jpg" type="image/jpeg">
-				<source media="(max-width: 1050px)" srcset="assets/img/Siouxsie-and-the-Banshees-700.jpg" type="image/jpeg">
-				<img src="assets/img/Siouxsie-and-the-Banshees-1000.jpg" alt="Integrantes do Siouxsie and the Banshees" class="fotosbandas">
+				<source media="(max-width: 750px)" srcset="assets/img/Siouxsie-and-the-Banshees-300.jpg"
+					type="image/jpeg">
+				<source media="(max-width: 1050px)" srcset="assets/img/Siouxsie-and-the-Banshees-700.jpg"
+					type="image/jpeg">
+				<img src="assets/img/Siouxsie-and-the-Banshees-1000.jpg" alt="Integrantes do Siouxsie and the Banshees"
+					class="fotosbandas">
 			</picture>
 			<figcaption>
 				Os integrantes do Siouxsie and the Banshees
@@ -153,13 +206,37 @@
 			<p class="conteudo">
 				Seus maiores sucessos:
 			</p>
-			<aside class="video-container">
-				<iframe src="https://www.youtube.com/embed/wsOHvP1XnRg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
-				<iframe src="https://www.youtube.com/embed/4nAON-MwUPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
-				<iframe src="https://www.youtube.com/embed/amR6-neQBPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
-				<iframe src="https://www.youtube.com/embed/HpcNaqkrPm8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
-				<iframe src="https://www.youtube.com/embed/gGH_16SICL0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
+			<aside>
+				<div class="video-container">
+					<iframe src="https://www.youtube.com/embed/wsOHvP1XnRg" title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen class="video"></iframe>
+				</div>
+				<div class="video-container">
+					<iframe src="https://www.youtube.com/embed/4nAON-MwUPY" title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen class="video"></iframe>
+				</div>
+				<div class="video-container">
+					<iframe src="https://www.youtube.com/embed/amR6-neQBPE" title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen class="video"></iframe>
+				</div>
+				<div class="video-container">
+					<iframe src="https://www.youtube.com/embed/HpcNaqkrPm8" title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen class="video"></iframe>
+				</div>
+				<div class="video-container">
+					<iframe src="https://www.youtube.com/embed/gGH_16SICL0" title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen class="video"></iframe>
+				</div>
 			</aside>
-		</main>
+	</main>
+	<footer>
+		Criado por Nickolas Moura
+	</footer>
 </body>
+
 </html>
